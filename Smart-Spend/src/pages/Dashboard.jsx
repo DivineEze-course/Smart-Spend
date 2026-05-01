@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
 import Navbar from '../components/Navbar';
-import Goalcard from "../components/Goalcard";
+import Goalcard from "../components/Goalcard";  
+import { useNavigate } from "react-router-dom";
 export default function Dashboard(){
+   const navigate = useNavigate();
    const userName= "Francesca";
    const currentBalance="520,000";
    const [goals, setGoals]=useState([]);
@@ -64,6 +66,7 @@ export default function Dashboard(){
                 + Add New Goal
             </button>
         </section>
+        <button onClick={() => navigate("/goals-overview")} className="p-3 border-1">All Goals </button>
         <hr/>
        </div>
         </div>
