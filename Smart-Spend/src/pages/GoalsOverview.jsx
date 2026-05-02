@@ -15,7 +15,7 @@ useEffect(() => {
     Goals Overview
   </h1>
 
-  <div className="hidden md:grid grid-cols-4 text-sm">
+  <div className="hidden md:grid grid-cols-4 text-sm  border-gray-200 border rounded-lg">
     
     <div className="p-2 border-b border-r border-gray-200 font-medium">Goal Name</div>
     <div className="p-2 border-b border-r border-gray-200 font-medium">Target</div>
@@ -35,7 +35,7 @@ useEffect(() => {
             <div className="flex items-center gap-2">
               <div className="h-3 bg-gray-200 rounded w-full">
                 <div
-                  className="bg-purple-700 h-full rounded"
+                  className="bg-blue-900/60 h-full rounded"
                   style={{ width: `${progress}%` }}
                 />
               </div>
@@ -53,7 +53,8 @@ useEffect(() => {
 
       return (
         <div key={goal.id} className="p-4 space-y-2 rounded-lg shadow-lg mt-3 border-t border-gray-100">
-          <h2 className="font-medium text-blue-900">{goal.name}</h2>
+            <p className="flex justify-between"> <h2 className="font-medium text-blue-900">{goal.name}</h2> <p className="p-2 bg-green-600 rounded-lg text-white text-xs">Manual</p></p>
+          
 
           <div className="text-sm text-gray-600">
             
