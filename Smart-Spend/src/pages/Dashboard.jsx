@@ -66,7 +66,7 @@ export default function Dashboard(){
                 + Add New Goal
             </button>
         </section>
-        <button onClick={() => navigate("/goals-overview")} className="p-3 border-1">All Goals </button>
+        
         <hr/>
        </div>
         </div>
