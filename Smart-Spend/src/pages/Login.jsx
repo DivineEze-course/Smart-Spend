@@ -33,9 +33,10 @@ export default function Login() {
   };
 
   return (
-    <form
+    <div className="mt-9 font-roboto">
+    <form 
       onSubmit={handleSubmit}
-      className="flex flex-col p-8 justify-center mt-6 shadow-lg rounded-lg md:w-150"
+      className="flex flex-col p-8 justify-center mt-6 shadow-lg rounded-lg md:w-120"
     >
       <h2 className="text-center text-purple-900 text-xl">Welcome Back</h2>
       <h3 className="text-center text-sm">Login to continue</h3>
@@ -66,7 +67,7 @@ export default function Login() {
         {error && <p className="text-red-500">{error}</p>}
       </div>
 
-  <span className="flex align-center justify-between mt-2">
+  <span className="flex align-center justify-between mt-2 gap-2">
                 <span className="flex gap-2">
             <input type="checkbox"className="accent-purple-900" /><p className="text-md ">Remember me</p></span>
             <a href=""><p className="text-purple-900 cursor-pointer">Forgot password?</p></a>
@@ -80,6 +81,7 @@ export default function Login() {
       </button>
       <p className="mt-6 text-center">Dont have an Account? <span className="text-purple-900 ms-1">Sign up</span></p>
     </form>
+    </div>
   );
 }
             

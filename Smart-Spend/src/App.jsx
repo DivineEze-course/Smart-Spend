@@ -11,7 +11,8 @@ function App(){
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login/>}/>
+        <Route path="/" element={
+        <div className="flex justify-center items-center"><Login/></div>}/>
         <Route path="/sign-up" element={<SignUp/>}/>
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/create-goal" element={<CreateGoal/>}/>
