@@ -4,7 +4,8 @@ import Goalcard from "../components/Goalcard";
 import { useNavigate } from "react-router-dom";
 export default function Dashboard(){
    const navigate = useNavigate();
-   const userName= "Francesca";
+   const user = JSON.parse(localStorage.getItem("user")) || {};
+   const userName= user.userName;
    const currentBalance="520,000";
    const [goals, setGoals]=useState([]);
    useEffect(()=> {

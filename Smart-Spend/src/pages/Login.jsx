@@ -23,15 +23,13 @@ export default function Login() {
     }
 
     setTimeout(() => {
-      if (userName === "Martha12" && userPassword === "123456") {
+      
         localStorage.setItem("user", JSON.stringify({ userName }));
         localStorage.setItem("token", "fake-token");
 
         navigate("/dashboard");
-      } else {
-        setError("Invalid credentials");
-      }
-    }, 1000);
+      } 
+    , 1000);
   };
 
   return (
