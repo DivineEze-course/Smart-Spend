@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "tailwindcss";
+  
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+  --color-purple: #690A7C;
+  --color-slate: #BCBDC0;
+  --color-indigo:#130130;
+  --color-red:#810606;
+  --color-periwinkle:#D6D6EB;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.float-card {
+  animation: float 3s ease-in-out infinite;
+}
