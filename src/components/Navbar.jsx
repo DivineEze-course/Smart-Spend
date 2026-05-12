@@ -9,10 +9,10 @@ const Navbar= ({ setShowReminder })=>{
     return(
         <>
             
-            <div className="md:hidden fixed  z-50">
+            <div className="md:hidden  z-50">
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
-                    className="text-white bg-[#7a1c2e] p-2 text-2xl"
+                    className="text-white bg-[#7a1c2e] p-2 text-2xl  rounded-r-md "
                 >
                     <i className={`bi ${menuOpen ? "bi-x-lg" : "bi-list"}`}></i>
                 </button>
